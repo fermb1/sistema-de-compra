@@ -1,18 +1,18 @@
-/* General */
+
 .App {
   text-align: center;
 }
 
-/* Contenedor de artículos */
+
 .articles {
   display: flex;
-  justify-content: center; /* Centra los artículos horizontalmente */
-  gap: 20px; /* Espaciado entre los artículos */
-  flex-wrap: wrap; /* Permite que los artículos bajen de línea si el espacio no es suficiente */
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
   padding: 20px;
 }
 
-/* Estilo de cada artículo */
+
 .article {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -52,7 +52,7 @@
   background-color: #0056b3;
 }
 
-/* Carrito */
+
 .cart {
   margin-top: 20px;
   font-size: 1.2rem;

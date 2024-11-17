@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 
 function App() {
-  // Estado para el costo total
+
   const [costo, setCosto] = useState(0);
 
   const isCartEmpty = costo === 0;
