@@ -1,7 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-
 function App() {
 
   const [costo, setCosto] = useState(0);
@@ -21,7 +20,7 @@ function App() {
       return `ID del producto: ${this._idProducto}, Nombre: ${this._nombre}, Precio: ${this._precio}`;
     }
   }
-  let articulos =["ropa1", "ropa2", "ropa3", "ropa4","ropa5", "ropa6", "ropa7", "ropa8", "ropa6", "ropa7", "ropa9", "ropa10", "ropa11", "ropa12"]
+  let articulos =["ropa1", "ropa2", "ropa3", "ropa4","ropa5", "ropa6", "ropa7"]
   const setArticle = (precio, nombre) => {
     const product = new Producto(nombre, precio);
     console.log("Nuevo producto creado:", product);
