@@ -1,30 +1,42 @@
 .title-buy {
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 10px; 
-    background-color: #f8f8f8;
-
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 1536px;
+    padding-right: 10px;
+    position: relative;
+    top: -130px;
+    border-bottom: black 1px solid;
 }
 
-.title-name{
-    padding-left: 580px;
+
+.title-name {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-left: 100px;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .button-create {
-    height: 30px; 
-    width: 80px; 
-    border: 1px solid #e0e0e0; 
+    height: 30px;
+    width: 80px;
+    border: 1px solid #e0e0e0;
     border-radius: 10px;
     background: #cecece;
-    color: #333; 
+    color: #333;
     font-size: 14px;
-    text-align: center; /
+    text-align: center;
     line-height: 30px;
-    cursor: pointer; 
-    transition: background 0.3s ease;}
-
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
 .button-create:hover {
-    background: #b0b0b0; 
+    background: #b0b0b0;
 }
