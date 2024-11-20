@@ -1,64 +1,110 @@
-.App {
-  text-align: center; /* Opcional, depende del uso */
+:root{
+  --first-color:#343a40
 }
-
-.articles {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  padding: 20px;
-  max-width: 100%; /* Evita desbordamientos */
-  overflow-x: hidden; /* Previene scroll horizontal innecesario */
+h5{
+  color: var(--first-color);
 }
-
-.article {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  width: 150px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Centrado del contenedor principal */
+.article.App {
   text-align: center;
 }
 
-.article img {
-  max-width: 100px; /* Ajusta para evitar distorsión */
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 10px;
+/* Estilo para el contenedor de artículos */
+.articles {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%; /* Limita el ancho al tamaño de la página */
+  margin: 0 auto; /* Centra el contenedor */
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  position: relative; /* Elimina la necesidad de 'left' */
 }
 
+/* Información adicional en la sección */
+.cantidad-app {
+  font-size: 20px;
+  background-color: #bdbdbd;
+  height: auto;
+  width: 200px;
+  border-radius: 10px;
+  margin: 20px auto; /* Centra el elemento en todas las pantallas */
+  text-align: center; /* Alinea el texto */
+}
+
+/* Estilo para cada artículo */
+.article {
+  border-radius: 8px;
+  max-width: 300px; /* Establece un ancho máximo */
+  width: calc(100% - 40px); /* Asegura espacio lateral en pantallas pequeñas */
+  margin: 20px auto; /* Añade separación y centra */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Imágenes en los artículos */
+.article img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+/* Títulos de los artículos */
 .article h5 {
   font-size: 1rem;
   margin: 5px 0;
 }
 
+/* Párrafos en los artículos */
 .article p {
   font-size: 0.9rem;
   margin: 5px 0;
 }
 
-.article button {
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
+/* Imágenes adicionales */
+.img-app {
+  max-width: 100%;
+  height: auto;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 10px;
 }
 
+/* Estilos responsivos para dispositivos pequeños */
+@media (max-width: 768px) {
+  .articles {
+    gap: 15px; /* Reduce el espacio entre artículos */
+  }
+
+  .article {
+    padding: 15px;
+    width: 100%; /* Usa todo el ancho disponible */
+  }
+
+  .img-app {
+    width: 100%;
+    height: auto;
+  }
+
+  .cantidad-app {
+    width: 90%; /* Reduce el ancho en pantallas pequeñas */
+  }
+}
 .article button:hover {
-  background-color: #0056b3;
+  background-color: #ff0000;
+  color: #1b1b1b;
 }
 
 .article button:focus {
-  outline: 2px solid #0056b3; /* Estilo visible para accesibilidad */
+  outline: 2px solid #0056b3;
   outline-offset: 2px;
 }
 
+/* Contenedor del carrito */
 .cart {
   margin-top: 20px;
   font-size: 1.2rem;
-  word-wrap: break-word; /* Previene desbordamiento de texto */
+  word-wrap: break-word; /* Ajusta texto largo */
+  text-align: center;
 }

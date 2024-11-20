@@ -1,5 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import remera1 from "./assets/remera1.png";
 import "./App.css";
 function App() {
 
@@ -20,7 +20,9 @@ function App() {
       return `ID del producto: ${this._idProducto}, Nombre: ${this._nombre}, Precio: ${this._precio}`;
     }
   }
-  let articulos =["ropa1", "ropa2", "ropa3", "ropa4","ropa5", "ropa6", "ropa7"]
+  
+  let articulos =["ropa1", "ropa2", "ropa3", "ropa4", "ropa5", "ropa6 "]
+  let imges = [remera1]
   const setArticle = (precio, nombre) => {
     const product = new Producto(nombre, precio);
     console.log("Nuevo producto creado:", product);
@@ -30,16 +32,21 @@ function App() {
   return (
     <div className="App">
       <section>
-        <p>cantidad de articulos: {articulos.length}</p>
+        <p className="cantidad-app">cantidad de articulos: {articulos.length}</p>
         <div className="articles">
           {articulos.map((nombre, index) => (
             <div className="article" key={index}>
-              <img src={reactLogo} alt="React Logo" />
+              {imges.map((nombre,index)=> (
+                <img className="img-app" src={nombre} />
+              ))}
               <h5>Artículo: {nombre}</h5>
-              <p>Costo: 100</p>
-              <button onClick={() => setArticle(100, nombre)}>
-                Agregar al carrito
-              </button>
+              <p>$45.000 ARS</p>
+              <button onClick={()=>(
+                <form>
+                  <input type="text" placeholder="nombre"/>
+                  <form/>
+              )}>
+              <i class="ri-edit-box-line"></i></button>
             </div>
           ))}
         </div>

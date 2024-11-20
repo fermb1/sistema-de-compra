@@ -1,18 +1,20 @@
 .title-buy {
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     box-sizing: border-box;
-    width: 1536px;
     padding-right: 10px;
-    position: relative;
-    top: -130px;
-    border-bottom: black 1px solid;
-}
-
-
-.title-name {
+    position: fixed; /* Fijado para mantenerse visible al hacer scroll */
+    top: 0px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    z-index: 10; /* Asegura que quede sobre otros elementos */
+    padding-bottom: 1px;
+  }
+  
+  .title-name {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -21,22 +23,23 @@
     padding-left: 100px;
     margin-left: auto; 
     margin-right: auto;
-}
-
-.button-create {
-    height: 30px;
-    width: 80px;
+  }
+  
+  .button-create {
+    height: 50px;
+    width: 120px;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     background: #cecece;
-    color: #333;
-    font-size: 14px;
+    color: #333333;
+    font-size: 20px;
     text-align: center;
     line-height: 30px;
     cursor: pointer;
     transition: background 0.3s ease;
-}
-
-.button-create:hover {
+  }
+  
+  .button-create:hover {
     background: #b0b0b0;
-}
+  }
+  
