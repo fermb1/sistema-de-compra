@@ -11,9 +11,11 @@ h5{
 
 /* Estilo para el contenedor de artículos */
 .articles {
+  padding-left: 300px;
+  padding-right: 200px;
   padding-top: 150px;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   gap: 20px;
   flex-wrap: wrap;
   max-width: 100%; /* Limita el ancho al tamaño de la página */
@@ -28,14 +30,14 @@ h5{
   background-color: #bdbdbd;
   height: auto;
   width: 200px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 20px auto; /* Centra el elemento en todas las pantallas */
   text-align: center; /* Alinea el texto */
 }
 
 /* Estilo para cada artículo */
 .article {
-  border-radius: 8px;
+  border-radius: 1px;
   max-width: 300px; /* Establece un ancho máximo */
   width: calc(100% - 40px); /* Asegura espacio lateral en pantallas pequeñas */
   margin: 20px auto; /* Añade separación y centra */
@@ -68,7 +70,7 @@ h5{
   max-width: 100%;
   height: auto;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* Estilos responsivos para dispositivos pequeños */

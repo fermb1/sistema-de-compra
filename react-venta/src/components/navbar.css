@@ -1,17 +1,20 @@
 .title-buy {
+  color: rgb(40, 40, 40);
     font-size: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
     box-sizing: border-box;
     padding-right: 10px;
     position: fixed; /* Fijado para mantenerse visible al hacer scroll */
-    top: 0px;
-    width: 100%;
-    border-bottom: 1px solid black;
+    width: 110%;
+    border-bottom: 0.1px solid rgb(40, 40, 40);
     z-index: 10; /* Asegura que quede sobre otros elementos */
     padding-bottom: 1px;
+    height: 100px;
+    top: -10px;
+    left:2px;
   }
   
   .title-name {
@@ -24,22 +27,40 @@
     margin-left: auto; 
     margin-right: auto;
   }
+  .log-button{
+    color: black;
+    height: 20px;
+    width: 60px;
+
+  }
   
+  .login-section{
+    background-color: rgb(255, 255, 255);
+    top: 250px;
+    left: 500px;
+    border: 1px solid;
+    position: absolute;
+    height: 500px;
+    width: 1000px;
+    animation: 0.2s login-spawn;
+  }
+
+  @keyframes login-spawn {
+    0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity: 100%;
+    }
+  }
   .button-create {
-    height: 50px;
-    width: 120px;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    background: #cecece;
-    color: #333333;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin-right: 420px;
+    height: 30px;
+    width: 37px;
     font-size: 20px;
     text-align: center;
     line-height: 30px;
     cursor: pointer;
-    transition: background 0.3s ease;
   }
-  
-  .button-create:hover {
-    background: #b0b0b0;
-  }
-  

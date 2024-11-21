@@ -2,11 +2,6 @@ import { useState } from "react";
 import remera1 from "./assets/remera1.png";
 import "./App.css";
 function App() {
-
-  const [costo, setCosto] = useState(0);
-
-  const isCartEmpty = costo === 0;
-
   class Producto {
     static contadorProductos = 0;
 
@@ -32,7 +27,6 @@ function App() {
   return (
     <div className="App">
       <section>
-        <p className="cantidad-app">cantidad de articulos: {articulos.length}</p>
         <div className="articles">
           {articulos.map((nombre, index) => (
             <div className="article" key={index}>
@@ -41,26 +35,10 @@ function App() {
               ))}
               <h5>Artículo: {nombre}</h5>
               <p>$45.000 ARS</p>
-              <button onClick={()=>(
-                <form>
-                  <input type="text" placeholder="nombre"/>
-                  <form/>
-              )}>
-              <i class="ri-edit-box-line"></i></button>
-            </div>
+              
+             </div> 
           ))}
         </div>
-      </section>
-
-      <section className="cart">
-        <h2>Carrito</h2>
-        <p>
-          <b>
-            {isCartEmpty
-              ? "Tu carrito está vacío"
-              : `El costo total es: $${costo}`}
-          </b>
-        </p>
       </section>
     </div>
   );
