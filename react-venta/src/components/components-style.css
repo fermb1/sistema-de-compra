@@ -33,16 +33,39 @@
     width: 60px;
 
   }
+
+  .login-input{
+    appearance: auto;
+    border: 1px solid;
+    font-size: 14px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   
   .login-section{
     background-color: rgb(255, 255, 255);
     top: 250px;
-    left: 500px;
-    border: 1px solid;
+    left: -1px;
+    border: 1px solid white;
+    border-radius: 20px;
     position: absolute;
-    height: 500px;
-    width: 1000px;
+    height: 589.547px;
+    line-height: 24px;
+    padding-left: 16px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    padding-right: 16px;
+    position: relative;
+    text-align: ;
+    width: 500px;
     animation: 0.2s login-spawn;
+    font-weight: 400;
+
   }
 
   @keyframes login-spawn {
